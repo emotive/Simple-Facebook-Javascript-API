@@ -1,0 +1,59 @@
+Simple Facebook Javascript API
+Javascript library that make it easy to publish items to Facebook using the new Graph API
+
+Website: http://github.com/emotive/Simple-Facebook-Javascript-API
+
+Created by: Kojo Duncan, Matthew Briney at emotive, llc (http://www.emotivellc.com)
+
+
+Install:
+
+1) Download the latest build
+2) Place the facebook.js file into your javascript folder
+3) Insert the following code on any page you want to reference the library calls and replace with your Facebook App ID:
+
+		<script>var appid = 'YOURAPIKEYHERE';</script>
+		<script src="js/facebook.js"></script>
+
+Using the Libraries:
+
+You can use the following calls to activate a Facebook action.  See the examples.html to see specific examples.
+
+Posting a badge: 
+	fbBadge('YOURMESSAGE','FULLPATHTOBADGEIMAGE','LINKNAME','BADGECLICKURL'); return false;
+
+Posting a YouTube video:
+	fbVideo('YOURMESSAGE','VIDEONAME','YOUTUBEID'); return false;
+
+Posting a Link:
+	fbLink('YOURMESSAGE','LINKNAME','LINKURL'); return false;
+
+Posting a Message:
+	fbMessage('YOURMESSAGE'); return false;
+
+Share Current Page:
+	fbSharePage('YOURMESSAGE'); return false;
+
+Create an Event:
+	fbEvent('EVENTNAME',STARTDATE,ENDDATE,'LOCATION','DETAILS'); return false;
+
+* Start and End date are ISO format and can be generated using http://www.timestampgenerator.com/
+
+Autofill a Form:
+	fbAutoFill('NAMEOFFIRSTNAMEFIELD','NAMEOFLASTNAMEFIELD','NAMEOFEMAILFIELD'); return false;
+
+
+License: 
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.

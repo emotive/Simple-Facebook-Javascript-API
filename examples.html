@@ -1,0 +1,73 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<title>Facebook API Class Scripts</title>
+</head>
+<body>
+
+<div id="fbAvatar"></div>
+<div id="fbID"></div>
+<div id="fbName"></div>
+<div id="fbFName"></div>
+<div id="fbLName"></div>
+<div id="fbEmail"></div>
+<div id="fbBirthday"></div>
+<div id="fbGender"></div>
+<div id="fbRelationship"></div>
+<div id="fbReligion"></div>
+<div id="fbParty"></div>
+<div id="fbWebsite"></div>
+<div id="fbLocation"></div>
+<div id="fbSpouse"></div>
+
+<div id="fb-root"></div>
+
+<script>
+	var appid = 'YOURAPIKEYHERE';
+</script>
+<script src="js/facebook.js"></script>
+
+<p>
+  <fb:login-button autologoutlink="true" perms="email,user_birthday,status_update,publish_stream,user_about_me,user_birthday,user_religion_politics,user_relationships,user_website,user_location,user_relationship_details"></fb:login-button>
+</p>
+<p> <fb:login-button perms="email,publish_stream" onclick="fbBadge('unlocked the Facebook Developer badge','http://matt.emotivellc.com/facebook/badge.png','Facebook Developers','http://www.emotivellc.com'); return false;">Badge Post</fb:login-button> </p>
+
+<p> <fb:login-button perms="email,publish_stream" onclick="fbVideo('is watching this video','Funny Reagan Quotes','X39dGQmBEww'); return false;">Post Video</fb:login-button> </p>
+
+<p> <fb:login-button perms="email,publish_stream" onclick="fbLink('Check out my twitter stream','John Kasich on Twitter','http://www.twitter.com/johnkasich/'); return false;">Post Link</fb:login-button> </p>
+
+<p> <fb:login-button perms="email,publish_stream" onclick="fbMessage('Just donated $5 to Candidate X'); return false;">Post Message</fb:login-button> </p>
+
+<p> <fb:login-button perms="email,publish_stream" onclick="fbSharePage('Take a look at this page'); return false;">Share This Page</fb:login-button> </p>
+
+<p> <fb:login-button perms="email,publish_stream,create_event" onclick="fbEvent('Election Day!',1288683794,1288690994,'Arlington, VA','Get out and vote and remember to bring a friend.'); return false;">Create Event</fb:login-button> </p>
+
+<p> <fb:login-button perms="email,publish_stream" onclick="fbAutoFill('first_name','last_name','email_address'); return false;">Auto Fill Form</fb:login-button> </p>
+
+
+<form name="SUPPORTER0203">
+	<input type="text" name="first_name" value="First Name">
+	<input type="text" name="last_name" value="Last Name">
+	<input type="text" name="email_address" value="Email Address">
+</form>
+
+<form name="SUPPORTER0204">
+	<input type="text" name="first_name" value="First Name">
+	<input type="text" name="last_name" value="Last Name">
+	<input type="text" name="email_address" value="Email Address">
+</form>
+
+<form name="SUPPORTER0205">
+	<input type="text" name="first_name" value="First Name">
+	<input type="text" name="last_name" value="Last Name">
+	<input type="text" name="email_address" value="Email Address">
+</form>
+
+<form name="SUPPORTER0206">
+	<input type="text" name="first_name" value="First Name">
+	<input type="text" name="last_name" value="Last Name">
+	<input type="text" name="email_address" value="Email Address">
+</form>
+
+
+</body>
+</html>
