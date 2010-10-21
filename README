@@ -44,7 +44,7 @@ Autofill a Form:
 	fbAutoFill('NAMEOFFIRSTNAMEFIELD','NAMEOFLASTNAMEFIELD','NAMEOFEMAILFIELD'); return false;
 
 Create a Facebook Send to a Friend Facepile Tool
-	fbSendFriend(INSTRUCTIONS,BUTTONTEXT,MESSAGEYOUWANTTOSEND);
+	fbSendFriend('INSTRUCTIONS','BUTTONTEXT','MESSAGEYOUWANTTOSEND');
 
 
 License: 
