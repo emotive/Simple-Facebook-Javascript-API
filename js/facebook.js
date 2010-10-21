@@ -171,3 +171,18 @@ function fbAutoFill(first, last, email) {
 }
 
 
+// Send to a Friend box
+
+function fbSendFriend(header,appname,message) {
+	document.write ('<fb:serverFbml><script type="text/fbml"><fb:fbml><fb:request-form action="');
+	document.write (window.location);
+	document.write ('" invite="true" method="POST" type="');
+	document.write (appname);
+	document.write ('" content="');
+	document.write (message);
+	document.write ('" ><fb:multi-friend-selector row="7" email_invite="true" cols="3" import_external_friends="true" actiontext="');
+	document.write (header);
+	document.write ('" exclude_ids="" /><input type="hidden" name="ids[]" /></fb:request-form></fb:fbml></script></fb:serverFbml>');
+}
+
+

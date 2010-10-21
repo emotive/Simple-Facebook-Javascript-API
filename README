@@ -12,6 +12,7 @@ Install:
 2) Place the facebook.js file into your javascript folder
 3) Insert the following code on any page you want to reference the library calls and replace with your Facebook App ID:
 
+		<div id="fb-root"></div> 
 		<script>var appid = 'YOURAPIKEYHERE';</script>
 		<script src="js/facebook.js"></script>
 
@@ -41,6 +42,9 @@ Create an Event:
 
 Autofill a Form:
 	fbAutoFill('NAMEOFFIRSTNAMEFIELD','NAMEOFLASTNAMEFIELD','NAMEOFEMAILFIELD'); return false;
+
+Create a Facebook Send to a Friend Facepile Tool
+	fbSendFriend(INSTRUCTIONS,BUTTONTEXT,MESSAGEYOUWANTTOSEND);
 
 
 License: 
